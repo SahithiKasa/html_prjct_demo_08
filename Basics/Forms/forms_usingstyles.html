@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Student Registration Form</title>
+    <style>
+        body{
+            font-family: Arial;
+            background: color #f0f0f0;
+        }
+        form{
+            background: white;
+            padding: 20px;
+            width: 300px;
+            margin: 50px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 5px gray;
+        }
+        label{
+            display: block;
+            margin-top: 10px;
+        }
+        input,select,textarea{
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button{
+            margin-top: 15px;
+            width: 100%;
+            padding: 8px;
+            background: blue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover{
+            background: darkblue;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <form>
+            <h2>Student Registration </h2>
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Email></label>
+            <input type="email" required>
+
+            <label>Phone</label>
+            <input type="tel" required>
+
+            <label>Gender</label>
+            <select required>
+                <option value="">--Select--</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+            <label>Course</label>
+            <select required>
+                <option value="">--Select--</option>
+                <option>B.sc</option>
+                <option>B.com</option>
+                <option>B.Tech</option>
+                <option>B.A</option>
+            </select>
+            <label>Adress</label>
+            <textarea rows="3"></textarea>
+
+            <button type="submit">Register</button>
+
+        </form>
+    </body>
+</html>
