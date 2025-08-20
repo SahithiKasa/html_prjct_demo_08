@@ -6,9 +6,13 @@
         body{
             font-family: Arial;
             background: color #f0f0f0;
+            font-size: 14px;
+            display: grid;
+            place-items: center;
+            color: white;
         }
         form{
-            background: white;
+            background: darkslategray;
             padding: 20px;
             width: 300px;
             margin: 50px auto;
@@ -18,25 +22,23 @@
         label{
             display: block;
             margin-top: 10px;
+            font-size: 15px;
         }
         input,select,textarea{
             width: 100%;
-            padding: 6px;
+            padding: 10px;
             margin-top: 5px;
-            border: 1px solid #ccc;
+            border: 2px solid white;
             border-radius: 4px;
+            box-sizing: border-box;
         }
         button{
-            margin-top: 15px;
-            width: 100%;
-            padding: 8px;
-            background: blue;
+            width: 100px;
+            background-color: green;
             color: white;
-            border: none;
-            border-radius: 4px;
-        }
-        button:hover{
-            background: darkblue;
+            height: 40px;
+            border: 1px solid white;
+            cursor: pointer;
         }
         
     </style>
@@ -44,15 +46,20 @@
     <body>
         <form>
             <h2>Student Registration </h2>
+            <hr>
+            <div>
             <label>Full Name</label>
             <input type="text" required>
-
+            </div>
+          <div>
             <label>Email></label>
             <input type="email" required>
-
+            </div>
+          <div>
             <label>Phone</label>
             <input type="tel" required>
-
+            </div>
+           <div>
             <label>Gender</label>
             <select required>
                 <option value="">--Select--</option>
@@ -60,6 +67,8 @@
                 <option>Female</option>
                 <option>Other</option>
             </select>
+            </div>
+            <div>
             <label>Course</label>
             <select required>
                 <option value="">--Select--</option>
@@ -68,10 +77,15 @@
                 <option>B.Tech</option>
                 <option>B.A</option>
             </select>
+            </div>
+            <div>
             <label>Adress</label>
             <textarea rows="3"></textarea>
-
+            </div>
+            <div>
             <button type="submit">Register</button>
+            </div>
+            <span>Already have an account?></span>Please login with<strong>Google</strong>
 
         </form>
     </body>
